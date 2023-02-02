@@ -14,20 +14,58 @@
             box-sizing: border-box;
         }
 
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .wrap {
+            display: block;
+            width: 50%;
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .width {
+            width: 100%;
+        }
+
         #displayArray {
-            /* background-color: #eee; */
             box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
-            height: 3rem;
+            min-height: 3rem;
+            max-height: 5rem;
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .wrap {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <input type="number" id="myNumber" name="myNumber">
-    <button onclick="addToArray()">add</button>
-    <button onclick="subFromArray()">sub</button>
-    <div id="div1">stored numbers</div>
-    <div id="displayArray"></div>
+    <main>
+        <div class="wrap">
+            <div class="input">
+                <input class="width" type="number" id="myNumber" name="myNumber">
+                <button class="width" onclick="addToArray()">add</button>
+                <button class="width" onclick="subFromArray()">sub</button>
+            </div>
+            <div>
+                <h1 style="margin: 0;">stored numbers</h1>
+                <div id="displayArray"></div>
+            </div>
+        </div>
+    </main>
 
     <script type="text/JavaScript" src="javascript.js"></script>
 </body>

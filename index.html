@@ -7,22 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .display{
-            background-color: bisque;
-            width: 16rem;            
-            height: 4rem;
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap");
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        #displayArray {
+            /* background-color: #eee; */
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2);
+            height: 3rem;
         }
     </style>
 </head>
 
 <body>
     <input type="number" id="myNumber" name="myNumber">
-    <button onclick="addToArray()">add</button>    
+    <button onclick="addToArray()">add</button>
     <button onclick="subFromArray()">sub</button>
-
-    <div class="display">
-        <p id="output"></p>
-    </div>
+    <div id="div1">stored numbers</div>
+    <div id="displayArray"></div>
 
     <script type="text/JavaScript" src="javascript.js"></script>
 </body>

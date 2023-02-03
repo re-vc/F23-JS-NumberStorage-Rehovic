@@ -24,7 +24,7 @@ function addToArray() {
         myArray.push(myNumber);
         checkArray();        
     }
-    document.getElementById("myNumber").value = "";
+    // document.getElementById("myNumber").value = "";
 }
 
 function subFromArray() {
@@ -33,5 +33,5 @@ function subFromArray() {
         myArray.splice(myArray.indexOf(myNumber), 1);
         checkArray();        
     }
-    document.getElementById("myNumber").value = "";
+    // document.getElementById("myNumber").value = "";
 }

@@ -2,15 +2,18 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    color: #011627;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-around;
 }
 
 .wrap {
@@ -23,7 +26,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
-    height: 3rem;
+    height: 3.2rem;
 }
 
 .input {
@@ -69,7 +72,7 @@ main {
     border-radius: 5px;
     padding: 1rem;
     text-align: justify;
-    min-height: 3rem;
+    min-height: 3.2rem;
     max-height: 10rem;
     overflow: auto;
 }
@@ -82,6 +85,6 @@ main {
 
 @media (max-width: 768px) {
     .wrap {
-        width: 100%;
+        width: 95%;
     }
 }

@@ -1,7 +1,6 @@
 let myArray = [];
 
 function checkArray() {
-
     document.getElementById("displayArray").innerHTML = myArray.join(', ');
 }
 
